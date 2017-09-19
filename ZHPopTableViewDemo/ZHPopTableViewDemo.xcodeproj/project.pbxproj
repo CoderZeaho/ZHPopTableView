@@ -17,9 +17,9 @@
 		FA968F891F7116DC0006E531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA968F881F7116DC0006E531 /* Assets.xcassets */; };
 		FA968F971F7116DC0006E531 /* ZHPopTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968F961F7116DC0006E531 /* ZHPopTableViewDemoTests.m */; };
 		FA968FA21F7116DC0006E531 /* ZHPopTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968FA11F7116DC0006E531 /* ZHPopTableViewDemoUITests.m */; };
-		FA968FB21F7117340006E531 /* ZHPopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968FB11F7117340006E531 /* ZHPopTableView.m */; };
-		FA968FB51F7117610006E531 /* ZHPopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968FB41F7117610006E531 /* ZHPopTableViewCell.m */; };
 		FA968FB81F711DEE0006E531 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA968FB71F711DEE0006E531 /* Launch Screen.storyboard */; };
+		FA968FC51F71234D0006E531 /* ZHPopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968FC21F71234D0006E531 /* ZHPopTableView.m */; };
+		FA968FC61F71234D0006E531 /* ZHPopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968FC41F71234D0006E531 /* ZHPopTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +64,12 @@
 		FA968F9D1F7116DC0006E531 /* ZHPopTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHPopTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA968FA11F7116DC0006E531 /* ZHPopTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHPopTableViewDemoUITests.m; sourceTree = "<group>"; };
 		FA968FA31F7116DC0006E531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA968FB01F7117340006E531 /* ZHPopTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPopTableView.h; path = ZHPopTableView/ZHPopTableView.h; sourceTree = SOURCE_ROOT; };
-		FA968FB11F7117340006E531 /* ZHPopTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPopTableView.m; path = ZHPopTableView/ZHPopTableView.m; sourceTree = SOURCE_ROOT; };
-		FA968FB31F7117610006E531 /* ZHPopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPopTableViewCell.h; path = ZHPopTableView/ZHPopTableViewCell.h; sourceTree = SOURCE_ROOT; };
-		FA968FB41F7117610006E531 /* ZHPopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPopTableViewCell.m; path = ZHPopTableView/ZHPopTableViewCell.m; sourceTree = SOURCE_ROOT; };
 		FA968FB61F7118D10006E531 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		FA968FB71F711DEE0006E531 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FA968FC11F71234D0006E531 /* ZHPopTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHPopTableView.h; sourceTree = "<group>"; };
+		FA968FC21F71234D0006E531 /* ZHPopTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHPopTableView.m; sourceTree = "<group>"; };
+		FA968FC31F71234D0006E531 /* ZHPopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHPopTableViewCell.h; sourceTree = "<group>"; };
+		FA968FC41F71234D0006E531 /* ZHPopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHPopTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 		FA968F7B1F7116DC0006E531 /* ZHPopTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FA968FAF1F7117040006E531 /* ZHPopTableView */,
+				FA968FC01F71234D0006E531 /* ZHPopTableView */,
 				FA968F7F1F7116DC0006E531 /* AppDelegate.h */,
 				FA968F801F7116DC0006E531 /* AppDelegate.m */,
 				FA968F821F7116DC0006E531 /* ViewController.h */,
@@ -189,13 +189,13 @@
 			path = ZHPopTableViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		FA968FAF1F7117040006E531 /* ZHPopTableView */ = {
+		FA968FC01F71234D0006E531 /* ZHPopTableView */ = {
 			isa = PBXGroup;
 			children = (
-				FA968FB01F7117340006E531 /* ZHPopTableView.h */,
-				FA968FB11F7117340006E531 /* ZHPopTableView.m */,
-				FA968FB31F7117610006E531 /* ZHPopTableViewCell.h */,
-				FA968FB41F7117610006E531 /* ZHPopTableViewCell.m */,
+				FA968FC11F71234D0006E531 /* ZHPopTableView.h */,
+				FA968FC21F71234D0006E531 /* ZHPopTableView.m */,
+				FA968FC31F71234D0006E531 /* ZHPopTableViewCell.h */,
+				FA968FC41F71234D0006E531 /* ZHPopTableViewCell.m */,
 			);
 			path = ZHPopTableView;
 			sourceTree = "<group>";
@@ -494,9 +494,9 @@
 			files = (
 				FA968F841F7116DC0006E531 /* ViewController.m in Sources */,
 				FA968F811F7116DC0006E531 /* AppDelegate.m in Sources */,
-				FA968FB51F7117610006E531 /* ZHPopTableViewCell.m in Sources */,
+				FA968FC61F71234D0006E531 /* ZHPopTableViewCell.m in Sources */,
 				FA968F7E1F7116DC0006E531 /* main.m in Sources */,
-				FA968FB21F7117340006E531 /* ZHPopTableView.m in Sources */,
+				FA968FC51F71234D0006E531 /* ZHPopTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
