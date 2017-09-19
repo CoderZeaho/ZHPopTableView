@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24AF565A6AC7AE7B65D08237 /* libPods-ZHPopTableViewDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7628F611EFD1AE764DD5D5C1 /* libPods-ZHPopTableViewDemoUITests.a */; };
+		62A53E568C253B90120E89C7 /* libPods-ZHPopTableViewDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE08CB9934CA088EC4AE500B /* libPods-ZHPopTableViewDemoTests.a */; };
+		88DC563E6C23F99C525FA7D6 /* libPods-ZHPopTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E29AC9E19C3687AB992A89 /* libPods-ZHPopTableViewDemo.a */; };
+		FA968F7E1F7116DC0006E531 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968F7D1F7116DC0006E531 /* main.m */; };
+		FA968F811F7116DC0006E531 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968F801F7116DC0006E531 /* AppDelegate.m */; };
+		FA968F841F7116DC0006E531 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968F831F7116DC0006E531 /* ViewController.m */; };
+		FA968F871F7116DC0006E531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA968F851F7116DC0006E531 /* Main.storyboard */; };
+		FA968F891F7116DC0006E531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA968F881F7116DC0006E531 /* Assets.xcassets */; };
+		FA968F971F7116DC0006E531 /* ZHPopTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968F961F7116DC0006E531 /* ZHPopTableViewDemoTests.m */; };
+		FA968FA21F7116DC0006E531 /* ZHPopTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968FA11F7116DC0006E531 /* ZHPopTableViewDemoUITests.m */; };
+		FA968FB21F7117340006E531 /* ZHPopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968FB11F7117340006E531 /* ZHPopTableView.m */; };
+		FA968FB51F7117610006E531 /* ZHPopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA968FB41F7117610006E531 /* ZHPopTableViewCell.m */; };
+		FA968FB81F711DEE0006E531 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA968FB71F711DEE0006E531 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA968F931F7116DC0006E531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA968F711F7116DC0006E531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA968F781F7116DC0006E531;
+			remoteInfo = ZHPopTableViewDemo;
+		};
+		FA968F9E1F7116DC0006E531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA968F711F7116DC0006E531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA968F781F7116DC0006E531;
+			remoteInfo = ZHPopTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23E29AC9E19C3687AB992A89 /* libPods-ZHPopTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZHPopTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FEA7B5FFB2EADE1D6F1FF3 /* Pods-ZHPopTableViewDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHPopTableViewDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHPopTableViewDemoUITests/Pods-ZHPopTableViewDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		531FC7195BB330CCE4F92713 /* Pods-ZHPopTableViewDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHPopTableViewDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHPopTableViewDemoTests/Pods-ZHPopTableViewDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5664258D937E45372FBA164B /* Pods-ZHPopTableViewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHPopTableViewDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHPopTableViewDemoTests/Pods-ZHPopTableViewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		7628F611EFD1AE764DD5D5C1 /* libPods-ZHPopTableViewDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZHPopTableViewDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		979BC2C298894F014C654E6C /* Pods-ZHPopTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHPopTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHPopTableViewDemo/Pods-ZHPopTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AE5D5F982B57A8E99A7BBBB5 /* Pods-ZHPopTableViewDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHPopTableViewDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZHPopTableViewDemoUITests/Pods-ZHPopTableViewDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C85F955A507BE849E0A6A0B2 /* Pods-ZHPopTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHPopTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZHPopTableViewDemo/Pods-ZHPopTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE08CB9934CA088EC4AE500B /* libPods-ZHPopTableViewDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZHPopTableViewDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA968F791F7116DC0006E531 /* ZHPopTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHPopTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA968F7D1F7116DC0006E531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA968F7F1F7116DC0006E531 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA968F801F7116DC0006E531 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA968F821F7116DC0006E531 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FA968F831F7116DC0006E531 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA968F861F7116DC0006E531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA968F881F7116DC0006E531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA968F8D1F7116DC0006E531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA968F921F7116DC0006E531 /* ZHPopTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHPopTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA968F961F7116DC0006E531 /* ZHPopTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHPopTableViewDemoTests.m; sourceTree = "<group>"; };
+		FA968F981F7116DC0006E531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA968F9D1F7116DC0006E531 /* ZHPopTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHPopTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA968FA11F7116DC0006E531 /* ZHPopTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHPopTableViewDemoUITests.m; sourceTree = "<group>"; };
+		FA968FA31F7116DC0006E531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA968FB01F7117340006E531 /* ZHPopTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPopTableView.h; path = ZHPopTableView/ZHPopTableView.h; sourceTree = SOURCE_ROOT; };
+		FA968FB11F7117340006E531 /* ZHPopTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPopTableView.m; path = ZHPopTableView/ZHPopTableView.m; sourceTree = SOURCE_ROOT; };
+		FA968FB31F7117610006E531 /* ZHPopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPopTableViewCell.h; path = ZHPopTableView/ZHPopTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		FA968FB41F7117610006E531 /* ZHPopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPopTableViewCell.m; path = ZHPopTableView/ZHPopTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		FA968FB61F7118D10006E531 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FA968FB71F711DEE0006E531 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA968F761F7116DC0006E531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88DC563E6C23F99C525FA7D6 /* libPods-ZHPopTableViewDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA968F8F1F7116DC0006E531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62A53E568C253B90120E89C7 /* libPods-ZHPopTableViewDemoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA968F9A1F7116DC0006E531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24AF565A6AC7AE7B65D08237 /* libPods-ZHPopTableViewDemoUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2ADEF300D26B0D9483B95526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23E29AC9E19C3687AB992A89 /* libPods-ZHPopTableViewDemo.a */,
+				CE08CB9934CA088EC4AE500B /* libPods-ZHPopTableViewDemoTests.a */,
+				7628F611EFD1AE764DD5D5C1 /* libPods-ZHPopTableViewDemoUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5077537C0530F3453F0E172E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C85F955A507BE849E0A6A0B2 /* Pods-ZHPopTableViewDemo.debug.xcconfig */,
+				979BC2C298894F014C654E6C /* Pods-ZHPopTableViewDemo.release.xcconfig */,
+				531FC7195BB330CCE4F92713 /* Pods-ZHPopTableViewDemoTests.debug.xcconfig */,
+				5664258D937E45372FBA164B /* Pods-ZHPopTableViewDemoTests.release.xcconfig */,
+				31FEA7B5FFB2EADE1D6F1FF3 /* Pods-ZHPopTableViewDemoUITests.debug.xcconfig */,
+				AE5D5F982B57A8E99A7BBBB5 /* Pods-ZHPopTableViewDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA968F701F7116DC0006E531 = {
+			isa = PBXGroup;
+			children = (
+				FA968F7B1F7116DC0006E531 /* ZHPopTableViewDemo */,
+				FA968F951F7116DC0006E531 /* ZHPopTableViewDemoTests */,
+				FA968FA01F7116DC0006E531 /* ZHPopTableViewDemoUITests */,
+				FA968F7A1F7116DC0006E531 /* Products */,
+				5077537C0530F3453F0E172E /* Pods */,
+				2ADEF300D26B0D9483B95526 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA968F7A1F7116DC0006E531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA968F791F7116DC0006E531 /* ZHPopTableViewDemo.app */,
+				FA968F921F7116DC0006E531 /* ZHPopTableViewDemoTests.xctest */,
+				FA968F9D1F7116DC0006E531 /* ZHPopTableViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA968F7B1F7116DC0006E531 /* ZHPopTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA968FAF1F7117040006E531 /* ZHPopTableView */,
+				FA968F7F1F7116DC0006E531 /* AppDelegate.h */,
+				FA968F801F7116DC0006E531 /* AppDelegate.m */,
+				FA968F821F7116DC0006E531 /* ViewController.h */,
+				FA968F831F7116DC0006E531 /* ViewController.m */,
+				FA968FB71F711DEE0006E531 /* Launch Screen.storyboard */,
+				FA968F851F7116DC0006E531 /* Main.storyboard */,
+				FA968F881F7116DC0006E531 /* Assets.xcassets */,
+				FA968F8D1F7116DC0006E531 /* Info.plist */,
+				FA968F7C1F7116DC0006E531 /* Supporting Files */,
+			);
+			path = ZHPopTableViewDemo;
+			sourceTree = "<group>";
+		};
+		FA968F7C1F7116DC0006E531 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA968F7D1F7116DC0006E531 /* main.m */,
+				FA968FB61F7118D10006E531 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA968F951F7116DC0006E531 /* ZHPopTableViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA968F961F7116DC0006E531 /* ZHPopTableViewDemoTests.m */,
+				FA968F981F7116DC0006E531 /* Info.plist */,
+			);
+			path = ZHPopTableViewDemoTests;
+			sourceTree = "<group>";
+		};
+		FA968FA01F7116DC0006E531 /* ZHPopTableViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA968FA11F7116DC0006E531 /* ZHPopTableViewDemoUITests.m */,
+				FA968FA31F7116DC0006E531 /* Info.plist */,
+			);
+			path = ZHPopTableViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		FA968FAF1F7117040006E531 /* ZHPopTableView */ = {
+			isa = PBXGroup;
+			children = (
+				FA968FB01F7117340006E531 /* ZHPopTableView.h */,
+				FA968FB11F7117340006E531 /* ZHPopTableView.m */,
+				FA968FB31F7117610006E531 /* ZHPopTableViewCell.h */,
+				FA968FB41F7117610006E531 /* ZHPopTableViewCell.m */,
+			);
+			path = ZHPopTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA968F781F7116DC0006E531 /* ZHPopTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA968FA61F7116DC0006E531 /* Build configuration list for PBXNativeTarget "ZHPopTableViewDemo" */;
+			buildPhases = (
+				F21D5960155638E5640CB502 /* [CP] Check Pods Manifest.lock */,
+				FA968F751F7116DC0006E531 /* Sources */,
+				FA968F761F7116DC0006E531 /* Frameworks */,
+				FA968F771F7116DC0006E531 /* Resources */,
+				193C3AC7227FA9752B4F5C0F /* [CP] Embed Pods Frameworks */,
+				B35BA3A1E0A3875E6E88910E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHPopTableViewDemo;
+			productName = ZHPopTableViewDemo;
+			productReference = FA968F791F7116DC0006E531 /* ZHPopTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA968F911F7116DC0006E531 /* ZHPopTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA968FA91F7116DC0006E531 /* Build configuration list for PBXNativeTarget "ZHPopTableViewDemoTests" */;
+			buildPhases = (
+				FA9FE3AF7472F777C0BE4E92 /* [CP] Check Pods Manifest.lock */,
+				FA968F8E1F7116DC0006E531 /* Sources */,
+				FA968F8F1F7116DC0006E531 /* Frameworks */,
+				FA968F901F7116DC0006E531 /* Resources */,
+				7B9DB6827F4833E0B32FDB87 /* [CP] Embed Pods Frameworks */,
+				8BAB72F6F90ABA56FE875D42 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA968F941F7116DC0006E531 /* PBXTargetDependency */,
+			);
+			name = ZHPopTableViewDemoTests;
+			productName = ZHPopTableViewDemoTests;
+			productReference = FA968F921F7116DC0006E531 /* ZHPopTableViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA968F9C1F7116DC0006E531 /* ZHPopTableViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA968FAC1F7116DC0006E531 /* Build configuration list for PBXNativeTarget "ZHPopTableViewDemoUITests" */;
+			buildPhases = (
+				1AF005C2D0E3C25BA58C3519 /* [CP] Check Pods Manifest.lock */,
+				FA968F991F7116DC0006E531 /* Sources */,
+				FA968F9A1F7116DC0006E531 /* Frameworks */,
+				FA968F9B1F7116DC0006E531 /* Resources */,
+				4A266FAA1518991F7691D371 /* [CP] Embed Pods Frameworks */,
+				5053C7B2F975209A27A3BC7C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA968F9F1F7116DC0006E531 /* PBXTargetDependency */,
+			);
+			name = ZHPopTableViewDemoUITests;
+			productName = ZHPopTableViewDemoUITests;
+			productReference = FA968F9D1F7116DC0006E531 /* ZHPopTableViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA968F711F7116DC0006E531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Zeaho;
+				TargetAttributes = {
+					FA968F781F7116DC0006E531 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2ENWLKZ8AQ;
+						ProvisioningStyle = Automatic;
+					};
+					FA968F911F7116DC0006E531 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2ENWLKZ8AQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA968F781F7116DC0006E531;
+					};
+					FA968F9C1F7116DC0006E531 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2ENWLKZ8AQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FA968F781F7116DC0006E531;
+					};
+				};
+			};
+			buildConfigurationList = FA968F741F7116DC0006E531 /* Build configuration list for PBXProject "ZHPopTableViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA968F701F7116DC0006E531;
+			productRefGroup = FA968F7A1F7116DC0006E531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA968F781F7116DC0006E531 /* ZHPopTableViewDemo */,
+				FA968F911F7116DC0006E531 /* ZHPopTableViewDemoTests */,
+				FA968F9C1F7116DC0006E531 /* ZHPopTableViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA968F771F7116DC0006E531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA968FB81F711DEE0006E531 /* Launch Screen.storyboard in Resources */,
+				FA968F891F7116DC0006E531 /* Assets.xcassets in Resources */,
+				FA968F871F7116DC0006E531 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA968F901F7116DC0006E531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA968F9B1F7116DC0006E531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		193C3AC7227FA9752B4F5C0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZHPopTableViewDemo/Pods-ZHPopTableViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AF005C2D0E3C25BA58C3519 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZHPopTableViewDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A266FAA1518991F7691D371 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZHPopTableViewDemoUITests/Pods-ZHPopTableViewDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5053C7B2F975209A27A3BC7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZHPopTableViewDemoUITests/Pods-ZHPopTableViewDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B9DB6827F4833E0B32FDB87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZHPopTableViewDemoTests/Pods-ZHPopTableViewDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BAB72F6F90ABA56FE875D42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZHPopTableViewDemoTests/Pods-ZHPopTableViewDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B35BA3A1E0A3875E6E88910E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZHPopTableViewDemo/Pods-ZHPopTableViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F21D5960155638E5640CB502 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZHPopTableViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA9FE3AF7472F777C0BE4E92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZHPopTableViewDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA968F751F7116DC0006E531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA968F841F7116DC0006E531 /* ViewController.m in Sources */,
+				FA968F811F7116DC0006E531 /* AppDelegate.m in Sources */,
+				FA968FB51F7117610006E531 /* ZHPopTableViewCell.m in Sources */,
+				FA968F7E1F7116DC0006E531 /* main.m in Sources */,
+				FA968FB21F7117340006E531 /* ZHPopTableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA968F8E1F7116DC0006E531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA968F971F7116DC0006E531 /* ZHPopTableViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA968F991F7116DC0006E531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA968FA21F7116DC0006E531 /* ZHPopTableViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA968F941F7116DC0006E531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA968F781F7116DC0006E531 /* ZHPopTableViewDemo */;
+			targetProxy = FA968F931F7116DC0006E531 /* PBXContainerItemProxy */;
+		};
+		FA968F9F1F7116DC0006E531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA968F781F7116DC0006E531 /* ZHPopTableViewDemo */;
+			targetProxy = FA968F9E1F7116DC0006E531 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA968F851F7116DC0006E531 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA968F861F7116DC0006E531 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA968FA41F7116DC0006E531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FA968FA51F7116DC0006E531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA968FA71F7116DC0006E531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85F955A507BE849E0A6A0B2 /* Pods-ZHPopTableViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ENWLKZ8AQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZHPopTableViewDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = ZHPopTableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nedu.ZHPopTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA968FA81F7116DC0006E531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 979BC2C298894F014C654E6C /* Pods-ZHPopTableViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2ENWLKZ8AQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZHPopTableViewDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = ZHPopTableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nedu.ZHPopTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA968FAA1F7116DC0006E531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531FC7195BB330CCE4F92713 /* Pods-ZHPopTableViewDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2ENWLKZ8AQ;
+				INFOPLIST_FILE = ZHPopTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nedu.ZHPopTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHPopTableViewDemo.app/ZHPopTableViewDemo";
+			};
+			name = Debug;
+		};
+		FA968FAB1F7116DC0006E531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5664258D937E45372FBA164B /* Pods-ZHPopTableViewDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2ENWLKZ8AQ;
+				INFOPLIST_FILE = ZHPopTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nedu.ZHPopTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHPopTableViewDemo.app/ZHPopTableViewDemo";
+			};
+			name = Release;
+		};
+		FA968FAD1F7116DC0006E531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31FEA7B5FFB2EADE1D6F1FF3 /* Pods-ZHPopTableViewDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2ENWLKZ8AQ;
+				INFOPLIST_FILE = ZHPopTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nedu.ZHPopTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZHPopTableViewDemo;
+			};
+			name = Debug;
+		};
+		FA968FAE1F7116DC0006E531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5D5F982B57A8E99A7BBBB5 /* Pods-ZHPopTableViewDemoUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2ENWLKZ8AQ;
+				INFOPLIST_FILE = ZHPopTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.nedu.ZHPopTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZHPopTableViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA968F741F7116DC0006E531 /* Build configuration list for PBXProject "ZHPopTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA968FA41F7116DC0006E531 /* Debug */,
+				FA968FA51F7116DC0006E531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA968FA61F7116DC0006E531 /* Build configuration list for PBXNativeTarget "ZHPopTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA968FA71F7116DC0006E531 /* Debug */,
+				FA968FA81F7116DC0006E531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA968FA91F7116DC0006E531 /* Build configuration list for PBXNativeTarget "ZHPopTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA968FAA1F7116DC0006E531 /* Debug */,
+				FA968FAB1F7116DC0006E531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA968FAC1F7116DC0006E531 /* Build configuration list for PBXNativeTarget "ZHPopTableViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA968FAD1F7116DC0006E531 /* Debug */,
+				FA968FAE1F7116DC0006E531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA968F711F7116DC0006E531 /* Project object */;
+}
