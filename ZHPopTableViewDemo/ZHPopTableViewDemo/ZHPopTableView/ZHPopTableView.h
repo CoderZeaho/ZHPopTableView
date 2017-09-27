@@ -16,9 +16,9 @@
 
 @interface ZHPopTableView : UIView
 
-@property (nonatomic, strong) UIImage *icon;
+@property (nonatomic, copy) NSString *headlineText;
 
-@property (nonatomic, strong) NSString *title;
+@property (nonatomic, copy) NSString *assistText;
 
 @property (nonatomic, assign) id<ZHPopTableViewDelegate> delegate;
 

@@ -14,6 +14,8 @@ const CGFloat ZHPopViewAnimatinoDuration = .3f;
 
 @interface ZHPopTableView ()<UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) UIView *backgroundView;
+
 @property (nonatomic, strong) UIView *contenView;
 
 @property (nonatomic, strong) UIView *sectionView;
@@ -39,6 +41,9 @@ const CGFloat ZHPopViewAnimatinoDuration = .3f;
 
 - (void)_createSubviews {
     
+    self.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];;
+    [self addSubview:[self backgroundView]];
+    
     self.contenView = [[UIView alloc] initWithFrame:CGRectZero];
     [self addSubview:[self contenView]];
     
@@ -58,18 +63,16 @@ const CGFloat ZHPopViewAnimatinoDuration = .3f;
 - (void)_configurateSubviewsDefault {
     
     UITapGestureRecognizer *tapBackgroundView = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissAnimated:)];
-    [self addGestureRecognizer:tapBackgroundView];
+    [[self backgroundView] addGestureRecognizer:tapBackgroundView];
     
     self.contenView.backgroundColor = [UIColor whiteColor];
     
     self.sectionView.backgroundColor = [UIColor whiteColor];
     
-    self.sectionTitileLabel.text = @"选择舞单";
     self.sectionTitileLabel.font = [UIFont systemFontOfSize:14];
     self.sectionTitileLabel.textColor = [UIColor blackColor];
     
     [[self sectionIconButton] setImage:[UIImage imageNamed:@"文件夹(3)"] forState:UIControlStateNormal];
-    [[self sectionIconButton] setTitle:@"新建歌单" forState:UIControlStateNormal];
     self.sectionIconButton.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 0);
     self.sectionIconButton.titleEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0);
     [[self sectionIconButton] setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -84,6 +87,10 @@ const CGFloat ZHPopViewAnimatinoDuration = .3f;
 }
 
 - (void)_installConstraints {
+    
+    [[self backgroundView] mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self).offset(UIEdgeInsetsMake(0, 0, 0, 0));
+    }];
     
     [[self contenView] mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.mas_equalTo(self).offset(UIEdgeInsetsMake(0, 0, 0, 0));
@@ -114,18 +121,18 @@ const CGFloat ZHPopViewAnimatinoDuration = .3f;
 }
 
 #pragma mark - accessor
-- (void)setTitle:(NSString *)title {
-    if (_title != title) {
-        _title = title;
+- (void)setHeadlineText:(NSString *)headlineText {
+    if (_headlineText != headlineText) {
+        _headlineText = headlineText;
     }
-    self.sectionTitileLabel.text = title;
+    self.sectionTitileLabel.text = headlineText;
 }
 
-- (void)setIcon:(UIImage *)icon {
-    if (_icon != icon) {
-        _icon = icon;
+- (void)setAssistText:(NSString *)assistText {
+    if (_assistText != assistText) {
+        _assistText = assistText;
     }
-    [[self sectionIconButton] setImage:icon forState:UIControlStateNormal];
+    [[self sectionIconButton] setTitle:assistText forState:UIControlStateNormal];
 }
 
 - (void)setDataSource:(NSMutableArray *)dataSource {
@@ -208,6 +215,11 @@ const CGFloat ZHPopViewAnimatinoDuration = .3f;
         cell = [[ZHPopTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([ZHPopTableViewCell class])];
     }
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSLog(@"点击了第%ld个", indexPath.row);
 }
 
 /*

@@ -29,6 +29,8 @@
 - (ZHPopTableView *)popTableView {
     if (!_popTableView) {
         _popTableView = [[ZHPopTableView alloc] initWithFrame:[[self view] bounds]];
+        _popTableView.headlineText = @"选择舞单";
+        _popTableView.assistText = @"新建舞单";
     }
     return _popTableView;
 }
